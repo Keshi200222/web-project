@@ -5,7 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NewsDaily - Your Source for Daily News</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -30,32 +33,58 @@
       <h2>News Categories</h2>
       <div class="category-grid">
         <a href="category.php?category=technology" class="category-card">
+          <img src="img/Technology.jpg" alt="Technology" class="category-image" />
           <div class="category-content">
             <h3>Technology</h3>
             <p>Latest in tech and innovation</p>
           </div>
         </a>
         <a href="category.php?category=sports" class="category-card">
+          <img src="img/sports.png" alt="Sports" class="category-image" />
           <div class="category-content">
             <h3>Sports</h3>
             <p>Sports updates and highlights</p>
           </div>
         </a>
         <a href="category.php?category=business" class="category-card">
+          <img src="img/business.jpg" alt="Business" class="category-image" />
           <div class="category-content">
             <h3>Business</h3>
             <p>Business and finance news</p>
           </div>
         </a>
         <a href="category.php?category=entertainment" class="category-card">
+          <img src="img/entertaintment.jpg" alt="Entertainment" class="category-image" />
           <div class="category-content">
             <h3>Entertainment</h3>
             <p>Movies, music, and culture</p>
           </div>
         </a>
         <a href="category.php?category=science" class="category-card">
+          <img src="img/Science.jpg" alt="Science" class="category-image" />
           <div class="category-content">
             <h3>Science</h3>
+            <p>Scientific discoveries and research</p>
+          </div>
+        </a>
+        <a href="category.php?category=politics" class="category-card">
+          <img src="img/politics.jpg" alt="politics" class="category-image" />
+          <div class="category-content">
+            <h3>Politics</h3>
+            <p>Scientific discoveries and research</p>
+          </div>
+        </a>
+        <a href="category.php?category=health" class="category-card">
+          <img src="img/health.jpg" alt="health" class="category-image" />
+          <div class="category-content">
+            <h3>Health</h3>
+            <p>Scientific discoveries and research</p>
+          </div>
+        </a>
+        <a href="category.php?category=world" class="category-card">
+          <img src="img/world.jpg" alt="world" class="category-image" />
+          <div class="category-content">
+            <h3>world</h3>
             <p>Scientific discoveries and research</p>
           </div>
         </a>

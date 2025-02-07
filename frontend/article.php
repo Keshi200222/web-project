@@ -35,20 +35,23 @@ if (!$article) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo htmlspecialchars($article['title']); ?> - NewsDaily</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="article.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">NewsDaily</div>
-            <ul class="nav-links">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="about.php">About Us</a></li>
-                <li><a href="contact.php">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav>
+      <div class="logo">NewsDaily</div>
+      <ul class="nav-links">
+        <li><a href="index.php" class="active">Home</a></li>
+        <li><a href="about.php">About Us</a></li>
+        <li><a href="contact.php">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
     <main>
         <article class="news-article">
@@ -56,7 +59,7 @@ if (!$article) {
             <p><small>Published on: <?php echo $article['timestamp']; ?></small></p>
             <p><small>Author: <?php echo htmlspecialchars($article['author']); ?></small></p>
             <img src="../admin-panel/<?php echo htmlspecialchars($article['image']); ?>" alt="News Image">
-            <p><?php echo nl2br(htmlspecialchars($article['description'])); ?></p>
+            <p><?php echo nl2br(htmlspecialchars($article['content'])); ?></p>
         </article>
     </main>
 
